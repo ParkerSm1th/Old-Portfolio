@@ -52,12 +52,7 @@ class Post extends Component {
             <DocumentTitle title='Parker Smith - Blog'>
             <div className="page" id="page">
                     <Container>
-                        <div className="pageTitle img">
-                            <h1>Blog Post Here</h1> 
-                        </div>
-                        <Row className="portfolioItems">
                             <BlogPost slug={this.props.slug}/>
-                        </Row>
                     </Container>
             </div>
             </DocumentTitle>

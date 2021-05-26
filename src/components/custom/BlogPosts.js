@@ -32,7 +32,11 @@ const BlogPosts = () => {
         
       );
     default:
-      return <p>loading..</p>;
+      return (
+        <div className="pageTitle blogTitle img">
+            <h1><i className="fad fa-spinner-third fa-spin"></i></h1> 
+        </div>
+      );
   }
 };
 export default BlogPosts;

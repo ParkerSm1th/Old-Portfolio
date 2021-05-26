@@ -55,9 +55,7 @@ class Blog extends Component {
                         <div className="pageTitle img">
                             <h1>Blog</h1> 
                         </div>
-                        <Row className="portfolioItems">
-                            <BlogPosts />
-                        </Row>
+                        <BlogPosts />
                     </Container>
             </div>
             </DocumentTitle>

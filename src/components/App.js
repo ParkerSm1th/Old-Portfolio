@@ -57,7 +57,9 @@ class App extends Component {
                   <Route path="/pricing" component={Pricing} />
                   <Route path="/contact" component={Contact} />
                   <Route path="/blog" component={Blog} />
-                  <Route path="/post/:slug" component={Post} />
+                  <Route path="/post/:slug">
+                    <Post />
+                  </Route>
                   <Route path="/tos" component={TOS} />
                   <Route path='/404' component={NotFound}/>
                   <Route render={() => (
