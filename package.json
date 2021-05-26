@@ -1,0 +1,50 @@
+{
+  "name": "site",
+  "version": "0.1.0",
+  "main": "src/Main.js",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-regular-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.3.1",
+    "core-util-is": "^1.0.2",
+    "launchdarkly-react-client-sdk": "^2.20.1",
+    "react": "^16.8.6",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-router-last-location": "^2.0.1",
+    "react-scripts": "0.9.5",
+    "react-transition-group": "^4.2.1"
+  },
+  "old-homepage": "https://dev.parkersmith.io",
+  "homepage": "./",
+  "devDependencies": {
+    "electron": "^6.0.1",
+    "electron-builder": "^21.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron-start": "electron .",
+    "preelectron-pack": "npm run build",
+    "electron-pack": "build -c.extraMetadata.main=build/Main.js"
+  },
+  "build": {
+    "appId": "nonExistentID",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
