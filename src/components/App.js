@@ -22,6 +22,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Pricing from './pages/Pricing';
+import Blog from './pages/Blog';
+import Post from './pages/Post';
 import Contact from './pages/Contact';
 import TOS from './pages/TOS';
 import NotFound from './pages/errors/NotFound';
@@ -54,6 +56,8 @@ class App extends Component {
                   <Route path="/portfolio" component={Portfolio} />
                   <Route path="/pricing" component={Pricing} />
                   <Route path="/contact" component={Contact} />
+                  <Route path="/blog" component={Blog} />
+                  <Route path="/post/:slug" component={Post} />
                   <Route path="/tos" component={TOS} />
                   <Route path='/404' component={NotFound}/>
                   <Route render={() => (

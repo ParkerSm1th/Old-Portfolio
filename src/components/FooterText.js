@@ -18,7 +18,10 @@ const FooterText = ({ flags }) => {
                 </ul>
             </Col>
             <Col>
-            {flags.footerTextV ? <div><NavLink to="/tos"><h1 className="footerLink">TOS</h1></NavLink> </div> : <div></div>}
+            {flags.footerTextV ? <div>
+              <NavLink to="/tos"><h1 className="footerLink">TOS</h1></NavLink> 
+              <NavLink to="/blog"><h1 className="footerLink">Blog</h1></NavLink> 
+            </div> : <div></div>}
             </Col>
         </Row>;
   } else {
