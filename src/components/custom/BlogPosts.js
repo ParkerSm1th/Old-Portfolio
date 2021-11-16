@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom';
 
 const BlogPosts = () => {
-  const { state, error, data } = useApi('https://parker-smith-3.ghost.io/ghost/api/v4/content/posts/?key=4bbd9cc4ea0deccabfdf493e59');
+  const { state, error, data } = useApi('https://api.grpiz.io/portfolio/blog');
 
   switch (state) {
     case apiStates.ERROR:
@@ -19,7 +19,7 @@ const BlogPosts = () => {
     case apiStates.SUCCESS:
       return (
         <Row className="portfolioItems">
-            {data.posts.map((post) => (
+            {data.items.map((post) => (
                 <Col xs={12} md={4}>
                     <div className="portfolioItem">
                         <h1>{post.title}</h1>
