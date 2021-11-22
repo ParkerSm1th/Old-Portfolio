@@ -11,22 +11,25 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
     "core-util-is": "^1.0.2",
+    "gh-pages": "^3.2.3",
     "launchdarkly-react-client-sdk": "^2.20.1",
     "react": "^16.8.6",
     "react-addons-css-transition-group": "^15.6.2",
     "react-bootstrap": "^1.0.0-beta.9",
     "react-document-title": "^2.0.3",
     "react-dom": "^16.8.6",
+    "react-html-parser": "^2.0.2",
     "react-router-dom": "^5.0.1",
     "react-router-last-location": "^2.0.1",
     "react-scripts": "0.9.5",
     "react-transition-group": "^4.2.1"
   },
   "old-homepage": "https://dev.parkersmith.io",
-  "homepage": "http://parkersm1th.github.io/main-site",
+  "homepage": "http://parkersm1th.github.io/",
   "devDependencies": {
-    "electron": "^6.0.1",
-    "electron-builder": "^21.2.0"
+    "electron": "^11.2.1",
+    "electron-packager": "^15.2.0",
+    "spectron": "^13.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
