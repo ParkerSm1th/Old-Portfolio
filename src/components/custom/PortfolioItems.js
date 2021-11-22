@@ -25,7 +25,7 @@ const BlogPosts = () => {
                         <Col xs={12} md={4}>
                             <div className="portfolioItem">
                                 <img src={`${item.img}`}></img>
-                                <h1>{item.name} <a href={`item.link.url`} target="_blank"><span className="portfolioLink">View Site <i class="far fa-arrow-circle-right"></i></span></a></h1>
+                                <h1>{item.name} <a href={item.link.url} target="_blank"><span className="portfolioLink">View Site <i class="far fa-arrow-circle-right"></i></span></a></h1>
                                 <p dangerouslySetInnerHTML={{ __html: item.description }}></p>
                             </div>
                         </Col>
