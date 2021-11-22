@@ -23,7 +23,7 @@
     "react-transition-group": "^4.2.1"
   },
   "old-homepage": "https://dev.parkersmith.io",
-  "homepage": "./",
+  "homepage": "http://parkersm1th.github.io/main-site",
   "devDependencies": {
     "electron": "^6.0.1",
     "electron-builder": "^21.2.0"
@@ -35,7 +35,9 @@
     "eject": "react-scripts eject",
     "electron-start": "electron .",
     "preelectron-pack": "npm run build",
-    "electron-pack": "build -c.extraMetadata.main=build/Main.js"
+    "electron-pack": "build -c.extraMetadata.main=build/Main.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "build": {
     "appId": "nonExistentID",
